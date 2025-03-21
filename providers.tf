@@ -9,6 +9,12 @@ terraform {
       version = "~>3.0"
     }
   }
+  backend "azurerm" {
+      storage_account_name = "tfynov"
+      container_name       = "tfstate"
+      key                  = "var.str_key"
+  }
+
 }
 
 provider "azurerm" {
