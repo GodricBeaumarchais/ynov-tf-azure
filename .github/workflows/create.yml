@@ -23,12 +23,9 @@ jobs:
 
       - name: ⚙️ Terraform Init
         run: terraform init
-        working-directory: ./terraform
 
       - name: 🧠 Terraform Plan
         run: terraform plan -out=tfplan
-        working-directory: ./terraform
 
       - name: 🚀 Terraform Apply
         run: terraform apply tfplan
-        working-directory: ./terraform
