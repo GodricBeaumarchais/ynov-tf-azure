@@ -11,7 +11,7 @@ terraform {
   }
   backend "azurerm" {
       storage_account_name = "tfynov"
-      container_name       = "tfstate"
+      container_name       = "tfplans"
       key                  = "var.str_key"
   }
 
